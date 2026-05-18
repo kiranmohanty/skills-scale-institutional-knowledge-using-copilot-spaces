@@ -1,0 +1,84 @@
+name: "OctoAcme Project Management Docs README"
+description: "Create a comprehensive README for OctoAcme Project Management Docs with links to all process documents and a summary of processes."
+title: "[Process Doc Update]: Create README for OctoAcme Project Management Docs with links and summary"
+labels: ["documentation", "process improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Summary
+        Create a new README.md file for the OctoAcme Project Management Docs that:
+        1. Provides a brief overview of OctoAcme project management processes
+        2. Links to all existing process documents in the `docs/` folder
+        3. Includes a table of contents for easy navigation
+        4. Describes the purpose and scope of each document
+
+  - type: textarea
+    id: content_summary
+    attributes:
+      label: "Content Overview"
+      description: "This README will consolidate all OctoAcme project management documentation"
+      value: |
+        Create a comprehensive README that:
+        - Introduces OctoAcme project management framework
+        - Lists all 8 process documents with brief descriptions
+        - Includes links to each document in the docs/ folder
+        - Provides guidance on which documents to reference for different phases (initiation, planning, execution, release, retrospective)
+        - Explains the core roles and how they interact
+      placeholder: ""
+    validations:
+      required: false
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: "Why This Update is Needed"
+      description: "Explain the importance of this README"
+      value: |
+        - Central entry point for understanding OctoAcme processes
+        - Improves discoverability of process documents
+        - Accelerates onboarding for new team members
+        - Provides a quick reference guide linking all related documentation
+        - Aligns with the purpose of this Copilot Space to centralize institutional knowledge
+      placeholder: ""
+    validations:
+      required: false
+
+  - type: textarea
+    id: example_content
+    attributes:
+      label: "Proposed Content Structure"
+      description: "Suggested structure for the README"
+      value: |
+        # OctoAcme Project Management Documentation
+
+        ## Overview
+        OctoAcme uses a structured, iterative approach to project management based on proven practices...
+
+        ## Table of Contents
+        1. [Project Management Overview](#project-management-overview)
+        2. [Project Lifecycle](#project-lifecycle)
+        3. [Core Roles](#core-roles)
+        4. [Documentation Index](#documentation-index)
+
+        ## Documentation Index
+        - [OctoAcme Project Management Overview](docs/octoacme-project-management-overview.md) - Framework and principles
+        - [Project Initiation Guide](docs/octoacme-project-initiation.md) - Starting new projects
+        - [Project Planning](docs/octoacme-project-planning.md) - Breaking down work
+        - [Execution & Tracking](docs/octoacme-execution-and-tracking.md) - Day-to-day delivery
+        - [Risk Management & Communication](docs/octoacme-risks-and-communication.md) - Managing risks
+        - [Release & Deployment Guide](docs/octoacme-release-and-deployment.md) - Going to production
+        - [Retrospective & Continuous Improvement](docs/octoacme-retrospective-and-continuous-improvement.md) - Learning and improving
+        - [Roles and Personas](docs/octoacme-roles-and-personas.md) - Team structure and responsibilities
+
+  - type: checkboxes
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: "Check all that apply"
+      options:
+        - label: "README is created in docs/ or root directory"
+        - label: "All 8 process documents are linked with brief descriptions"
+        - label: "README includes a summary of OctoAcme project management principles"
+        - label: "Table of contents provided for easy navigation"
+        - label: "Document is clear and accessible to new team members"
